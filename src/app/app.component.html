@@ -4,9 +4,15 @@
 
 <div>
   <h1>Aplicación de Ejemplo</h1>
-  <button (click)="login()" *ngIf="!isAuthenticated">Iniciar Sesión</button>
-  <button (click)="logout()" *ngIf="isAuthenticated">Cerrar Sesión</button>
-  <div *ngIf="isAuthenticated">
-    <p>Bienvenido, usuario autenticado.</p>
-  </div>
+  @if (!isAuthenticated) {
+    <button (click)="login()">Iniciar Sesión</button>
+  }
+  @if (isAuthenticated) {
+    <button (click)="logout()">Cerrar Sesión</button>
+  }
+  @if (isAuthenticated) {
+    <div>
+      <p>Bienvenido, usuario autenticado.</p>
+    </div>
+  }
 </div>

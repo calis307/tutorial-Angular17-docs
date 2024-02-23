@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { UsuarioComponent } from './usuario/usuario.component';
-import { CommonModule } from '@angular/common';
+
 
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, UsuarioComponent,CommonModule],
+  imports: [RouterOutlet, UsuarioComponent],
   templateUrl: './app.component.html',
  /*  template: `
   <p>Hola mi hermosa ciudad {{city}} {{1+1}} </p>
