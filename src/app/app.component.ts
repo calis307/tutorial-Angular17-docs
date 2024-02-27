@@ -14,16 +14,8 @@ import { UsuarioComponent } from './usuario/usuario.component';
   <p>Hola mi hermosa ciudad {{city}} {{1+1}} </p>
 `, */
 styles: `
-.component {
-    color: #a144eb;
-  }
-  .editable-div{
-    border: 1px solid red;
-    padding: 10px;
-    border-radius: 2px solid;
-    border-color: aqua;
-}
 `,
+styleUrl: './app.component.css'
 
   
 })
@@ -37,7 +29,7 @@ export class AppComponent {
     { id: 'linux', name: 'Linux' }
   ]; 
 
-public isEditable:boolean = true;
+public isEditable:boolean = false;
 
 
   login() {
