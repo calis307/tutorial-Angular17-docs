@@ -16,3 +16,24 @@
     </div>
   }
 </div>
+
+<!-- Ejemplo bucle for -->
+<ul>
+@for (os of operatingSystems; track os.id) {
+ <li>{{ os.name }}</li>
+ }
+</ul>
+
+
+<!-- Property Binding in Angular -->
+
+
+<div class="editable-div" [contentEditable]="isEditable"></div>
+
+<!--Event handling  -->
+
+<button (click)="greet()">Hola</button>
+
+<div>
+  <section (mouseover)="onMouseOver()">{{message}}</section>
+</div>
