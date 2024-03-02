@@ -1,5 +1,7 @@
 # TutorialAngularDocs
 
+En este tutorial realizado en clase vimos los ejemplos de la documentación desde crear componentes, usar los templates,usar Binding, estructuras @if , @for ; Eventhandler
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
 
 ## Development server
